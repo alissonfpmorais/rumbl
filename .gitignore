@@ -35,3 +35,7 @@ npm-debug.log
 
 # Remove any secret from common repo
 **/*.secret.exs
+
+# Remove IDE specific folder data
+.idea
+.elixir_ls
