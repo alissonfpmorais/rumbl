@@ -30,3 +30,10 @@ iex -S mix phx.server
 clear
 iex -S mix phx.server
 iex -S mix phx.server
+iex -S mix phx.server
+clear
+mix phx.gen.html Multimedia Video videos user_id:references:users url:string title:string description:text
+mix ecto.migrate
+mix ecto.migrate
+clear
+iex -S mix phx.server
