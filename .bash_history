@@ -37,3 +37,19 @@ mix ecto.migrate
 mix ecto.migrate
 clear
 iex -S mix phx.server
+clear
+ls -la
+mix ecto.migrate
+iex -S mix phx.server
+clear
+ls -la
+git commit -m ":sparkles: add multimedia resource"
+iex -S mix phx.server
+clear
+mix run priv/repo/seeds.exs 
+iex -S mix phx.server
+mix run priv/repo/seeds.exs 
+mix run priv/repo/seeds.exs 
+iex -S mix phx.server
+clear
+iex -S mix phx.server
