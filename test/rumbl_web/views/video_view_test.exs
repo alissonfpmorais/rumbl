@@ -4,6 +4,7 @@ defmodule Rumbl.VideoViewTest do
 
   alias Rumbl.Accounts.User
   alias Rumbl.Multimedia
+
   alias Rumbl.Multimedia.{
     Category,
     Video
@@ -28,7 +29,13 @@ defmodule Rumbl.VideoViewTest do
     changeset = Multimedia.change_video(%Video{})
     categories = [%Category{id: 123, name: "cats"}]
 
-    content = render_to_string(RumblWeb.VideoView, "new.html", conn: conn, changeset: changeset, categories: categories)
+    content =
+      render_to_string(RumblWeb.VideoView, "new.html",
+        conn: conn,
+        changeset: changeset,
+        categories: categories
+      )
+
     assert String.contains?(content, "New Video")
   end
 end

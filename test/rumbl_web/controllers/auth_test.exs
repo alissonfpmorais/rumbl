@@ -49,6 +49,7 @@ defmodule RumblWeb.AuthTest do
 
   test "call places user from session into assigns", %{conn: conn} do
     user = user_fixture()
+
     conn =
       conn
       |> put_session(:user_id, user.id)

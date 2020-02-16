@@ -7,6 +7,7 @@ defmodule Rumbl.Multimedia do
   alias Rumbl.Repo
 
   alias Rumbl.Accounts
+
   alias Rumbl.Multimedia.{
     Video,
     Category

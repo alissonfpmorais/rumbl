@@ -13,8 +13,10 @@ defmodule RumblWeb.Auth do
     cond do
       conn.assigns[:current_user] ->
         conn
+
       user = user_id && Rumbl.Accounts.get_user(user_id) ->
         assign(conn, :current_user, user)
+
       true ->
         assign(conn, :current_user, nil)
     end
@@ -36,6 +38,7 @@ defmodule RumblWeb.Auth do
     case conn do
       %Plug.Conn{assigns: %{current_user: %Rumbl.Accounts.User{}}} ->
         conn
+
       _ ->
         conn
         |> put_flash(:error, "You must be logged in to access that page!")
