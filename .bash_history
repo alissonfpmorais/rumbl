@@ -53,3 +53,60 @@ mix run priv/repo/seeds.exs
 iex -S mix phx.server
 clear
 iex -S mix phx.server
+clear
+mix test
+iex -S mix
+clear
+mix test
+mix test
+mix test
+mix test
+clear
+mix test ./test/rumbl/accounts_test.ex 
+mix test ./test/rumbl/accounts_test.ex 
+mix test ./test/rumbl/accounts_test.ex 
+mix test ./test/rumbl/accounts_test.ex 
+mix test
+mix test ./test/rumbl/accounts_test.ex 
+mix test ./test/rumbl/accounts_test.ex 
+mix test ./test/rumbl/multimedia_test.ex 
+mix test ./test/rumbl/multimedia_test.ex 
+mix test ./test/rumbl/multimedia_test.ex 
+mix test ./test/rumbl/multimedia_test.ex 
+iex -S mix
+clear
+mix test ./test/rumbl_web/controllers/video_controller_test.exs 
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix test ./test/rumbl_web/
+mix format
+clear
+ls -la
+iex -S mix phx.server
+iex -S mix phx.server
+clear
+mix ecto.migrate
+iex -S mix phx.server
+clear
+clear
+iex -S mix phx.server
